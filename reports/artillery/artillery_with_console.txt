@@ -1,0 +1,1502 @@
+Statistical profiling result from isolate-0x7fad80000000-93309-v8.log, (9620 ticks, 170 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    480    5.0%          /usr/lib/system/libsystem_kernel.dylib
+    211    2.2%          /usr/lib/system/libsystem_pthread.dylib
+    147    1.5%          /usr/lib/system/libsystem_malloc.dylib
+    109    1.1%          /usr/lib/system/libsystem_c.dylib
+     76    0.8%          /usr/lib/libc++.1.dylib
+     69    0.7%          /usr/lib/system/libsystem_platform.dylib
+     42    0.4%          /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+      9    0.1%          /usr/lib/libc++abi.dylib
+      8    0.1%          /usr/lib/system/libdyld.dylib
+      7    0.1%          /usr/lib/libobjc.A.dylib
+      2    0.0%          /usr/lib/system/libxpc.dylib
+      1    0.0%          /usr/lib/system/libdispatch.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     48    0.5%    0.6%  LazyCompile: *resolve node:path:1091:10
+      9    0.1%    0.1%  LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      4    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      4    0.0%    0.0%  LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      4    0.0%    0.0%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:1891:35
+      4    0.0%    0.0%  LazyCompile: *asString /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/date-format/lib/index.js:29:18
+      4    0.0%    0.0%  LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      4    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:425:17
+      4    0.0%    0.0%  Function: ^deserializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:65:27
+      3    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      3    0.0%    0.0%  LazyCompile: *header /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:777:29
+      3    0.0%    0.0%  LazyCompile: *get node:_http_incoming:108:16
+      3    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:283:16
+      3    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      3    0.0%    0.0%  Function: ^etag /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/etag/index.js:70:15
+      3    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      3    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      2    0.0%    0.0%  RegExp: y{1,4}
+      2    0.0%    0.0%  RegExp: ^[a-zA-Z_][a-zA-Z_0-9]*$
+      2    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      2    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      2    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      2    0.0%    0.0%  LazyCompile: *set /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/application.js:359:23
+      2    0.0%    0.0%  LazyCompile: *parserOnIncoming node:_http_server:852:26
+      2    0.0%    0.0%  LazyCompile: *parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/vary/index.js:96:16
+      2    0.0%    0.0%  LazyCompile: *getHeader node:_http_outgoing:590:57
+      2    0.0%    0.0%  LazyCompile: *getEncodingOps node:buffer:678:24
+      2    0.0%    0.0%  LazyCompile: *formatProperty node:internal/util/inspect:1672:24
+      2    0.0%    0.0%  LazyCompile: *endReadable node:internal/streams/readable:1326:21
+      2    0.0%    0.0%  LazyCompile: *emit node:events:340:44
+      2    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.0%  LazyCompile: *afterWriteTick node:internal/streams/writable:482:24
+      2    0.0%    0.0%  LazyCompile: *_addListener node:events:418:22
+      2    0.0%    0.0%  Function: ^writeHead node:_http_server:269:19
+      2    0.0%    0.0%  Function: ^value node:internal/console/constructor:299:20
+      2    0.0%    0.0%  Function: ^validateString node:internal/validators:117:24
+      2    0.0%    0.0%  Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      2    0.0%    0.0%  Function: ^maybeCacheSourceMap node:internal/source_map/source_map_cache:74:29
+      2    0.0%    0.0%  Function: ^hasObserver node:internal/perf/observe:474:21
+      2    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:314:20
+      2    0.0%    0.0%  Function: ^fromStringFast node:buffer:412:24
+      2    0.0%    0.0%  Function: ^formatWithOptions node:internal/util/inspect:1883:27
+      2    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      2    0.0%    0.0%  Function: ^basename node:path:1306:11
+      2    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      2    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:886:42
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/streams:397:60
+      2    0.0%    0.0%  Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.0%  RegExp: \u001b\[\d\d?m
+      1    0.0%    0.0%  RegExp: =+$
+      1    0.0%    0.0%  LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  LazyCompile: *toString node:buffer:782:46
+      1    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2408:22
+      1    0.0%    0.0%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1    0.0%    0.0%  LazyCompile: *readFileSync node:fs:450:22
+      1    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.0%  LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  LazyCompile: *formatRaw node:internal/util/inspect:796:19
+      1    0.0%    0.0%  LazyCompile: *formatPrimitive node:internal/util/inspect:1382:25
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  LazyCompile: *debug /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/node_modules/debug/src/common.js:66:17
+      1    0.0%    0.0%  LazyCompile: *cpus node:os:133:14
+      1    0.0%    0.0%  LazyCompile: *configForCategory /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/categories.js:174:27
+      1    0.0%    0.0%  LazyCompile: *checkListener node:events:127:23
+      1    0.0%    0.0%  LazyCompile: *append /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/vary/index.js:38:17
+      1    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  LazyCompile: *Writable.write node:internal/streams/writable:333:36
+      1    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      1    0.0%    0.0%  Function: ^write /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:513:15
+      1    0.0%    0.0%  Function: ^validateNumber node:internal/validators:122:24
+      1    0.0%    0.0%  Function: ^validateEncoding node:internal/validators:198:26
+      1    0.0%    0.0%  Function: ^updateServers /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:543:23
+      1    0.0%    0.0%  Function: ^updateChildren node:internal/modules/cjs/loader:165:24
+      1    0.0%    0.0%  Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    0.0%    0.0%  Function: ^tryReadSync node:fs:429:21
+      1    0.0%    0.0%  Function: ^trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  Function: ^toBin /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1    0.0%    0.0%  Function: ^strEscape node:internal/util/inspect:465:19
+      1    0.0%    0.0%  Function: ^spliceOne node:internal/util:394:19
+      1    0.0%    0.0%  Function: ^setHasTickScheduled node:internal/process/task_queues:52:29
+      1    0.0%    0.0%  Function: ^session /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:179:26
+      1    0.0%    0.0%  Function: ^serializeBson /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1    0.0%    0.0%  Function: ^resume_ node:internal/streams/readable:985:17
+      1    0.0%    0.0%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.0%  Function: ^removeListener node:events:557:28
+      1    0.0%    0.0%  Function: ^remove node:internal/linkedlist:15:16
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2408:22
+      1    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      1    0.0%    0.0%  Function: ^readUInt32LE node:internal/buffer:215:22
+      1    0.0%    0.0%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.0%  Function: ^push node:internal/fixed_queue:99:7
+      1    0.0%    0.0%  Function: ^parseurl /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/parseurl/index.js:35:19
+      1    0.0%    0.0%  Function: ^parseAuthority /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/url-state-machine.js:731:71
+      1    0.0%    0.0%  Function: ^parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^onParserExecute node:_http_server:633:25
+      1    0.0%    0.0%  Function: ^onHeaders /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/on-headers/index.js:56:20
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:160:27
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.0%  Function: ^listenerCount node:events:722:23
+      1    0.0%    0.0%  Function: ^jsonParser /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/body-parser/lib/types/json.js:98:30
+      1    0.0%    0.0%  Function: ^isInt32 node:internal/validators:35:17
+      1    0.0%    0.0%  Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+      1    0.0%    0.0%  Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+      1    0.0%    0.0%  Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.0%  Function: ^getObserverType node:internal/perf/observe:117:25
+      1    0.0%    0.0%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:431:34
+      1    0.0%    0.0%  Function: ^get node:_http_incoming:108:16
+      1    0.0%    0.0%  Function: ^generate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:363:22
+      1    0.0%    0.0%  Function: ^fromString node:buffer:431:20
+      1    0.0%    0.0%  Function: ^formatWithOptionsInternal node:internal/util/inspect:1891:35
+      1    0.0%    0.0%  Function: ^formatValue node:internal/util/inspect:726:21
+      1    0.0%    0.0%  Function: ^formatRaw node:internal/util/inspect:796:19
+      1    0.0%    0.0%  Function: ^formatPrimitive node:internal/util/inspect:1382:25
+      1    0.0%    0.0%  Function: ^exports.options /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/utils.js:238:27
+      1    0.0%    0.0%  Function: ^end /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:250:27
+      1    0.0%    0.0%  Function: ^emitReadable_ node:internal/streams/readable:574:23
+      1    0.0%    0.0%  Function: ^emit node:events:340:44
+      1    0.0%    0.0%  Function: ^dispatch /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^createWriteWrap node:internal/stream_base_commons:113:25
+      1    0.0%    0.0%  Function: ^checkInt node:internal/buffer:58:18
+      1    0.0%    0.0%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.0%  Function: ^callback node:internal/streams/writable:550:44
+      1    0.0%    0.0%  Function: ^assertSize node:internal/crypto/random:74:20
+      1    0.0%    0.0%  Function: ^asString /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/date-format/lib/index.js:29:18
+      1    0.0%    0.0%  Function: ^app /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/file.js:70:24
+      1    0.0%    0.0%  Function: ^allocUnsafe node:buffer:372:42
+      1    0.0%    0.0%  Function: ^_unrefTimer node:net:417:52
+      1    0.0%    0.0%  Function: ^_log /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/logger.js:104:7
+      1    0.0%    0.0%  Function: ^_destroy node:internal/streams/destroy:70:18
+      1    0.0%    0.0%  Function: ^_addListener node:events:418:22
+      1    0.0%    0.0%  Function: ^Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:769:42
+      1    0.0%    0.0%  Function: ^SessionStrategy.authenticate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/strategies/session.js:45:50
+      1    0.0%    0.0%  Function: ^Readable.removeAllListeners node:internal/streams/readable:923:49
+      1    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  Function: ^Readable.on node:internal/streams/readable:875:33
+      1    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.0%  Function: ^Long /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/long.js:59:18
+      1    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.0%  Function: ^<anonymous> node:vm:313:27
+      1    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:558:44
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+
+ [C++]:
+   ticks  total  nonlib   name
+   4574   47.5%   54.1%  T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+   1057   11.0%   12.5%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    985   10.2%   11.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    320    3.3%    3.8%  T __kernelrpc_mach_port_get_context
+    212    2.2%    2.5%  T _host_request_notification
+    153    1.6%    1.8%  T _host_get_special_port
+    101    1.0%    1.2%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    100    1.0%    1.2%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     92    1.0%    1.1%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     63    0.7%    0.7%  T _mach_vm_map
+     38    0.4%    0.4%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     36    0.4%    0.4%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.3%    0.3%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+     28    0.3%    0.3%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     25    0.3%    0.3%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     21    0.2%    0.2%  T _mig_strncpy_zerofill
+     19    0.2%    0.2%  T _mach_msg_destroy
+     15    0.2%    0.2%  t node::fs::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.2%    0.2%  T _posix_spawn
+     14    0.1%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+     11    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.1%    0.1%  T _kdebug_typefilter
+      8    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      6    0.1%    0.1%  T _semaphore_create
+      5    0.1%    0.1%  t node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      5    0.1%    0.1%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T _mach_get_times
+      3    0.0%    0.0%  T ___thread_selfid
+      2    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      2    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      2    0.0%    0.0%  t node::AsyncHooks::pop_async_context(double)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_field(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      2    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      2    0.0%    0.0%  T __kernelrpc_vm_remap
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t node::TraceEventScope::TraceEventScope(char const*, char const*, void*)
+      1    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Execute(char const*, unsigned long)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::cares_wrap::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::AsyncWrap*, int)
+      1    0.0%    0.0%  T node::InternalCallbackScope::Close()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      1    0.0%    0.0%  T _task_policy_set
+      1    0.0%    0.0%  T _mk_timer_create
+      1    0.0%    0.0%  T _mk_timer_cancel
+      1    0.0%    0.0%  T _mach_vm_deallocate
+      1    0.0%    0.0%  T _kdebug_is_enabled
+      1    0.0%    0.0%  T _host_get_exception_ports
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_deallocate_trap
+
+ [Summary]:
+   ticks  total  nonlib   name
+    278    2.9%    3.3%  JavaScript
+   8011   83.3%   94.7%  C++
+    662    6.9%    7.8%  GC
+   1161   12.1%          Shared libraries
+    170    1.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   7176   97.5%   74.6%  T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+     63    0.9%    0.7%  T _mach_vm_map
+     51    0.7%    0.5%  T _host_get_special_port
+     21    0.3%    0.2%  T _host_request_notification
+     15    0.2%    0.2%  T _posix_spawn
+      9    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      9    0.1%    0.1%  T _kdebug_typefilter
+      3    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      2    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      1    0.0%    0.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _kdebug_is_enabled
+      1    0.0%    0.0%  T _host_get_exception_ports
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_deallocate_trap
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   4574   47.5%  T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+   2504   54.7%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+    268   10.7%      Function: ^writevGeneric node:internal/stream_base_commons:126:23
+    268  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+    268  100.0%          Function: ^Socket._writev node:net:801:36
+    268  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+    180    7.2%      Function: ^memoryUsage node:internal/process/per_thread:165:23
+     95   52.8%        Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+     55   57.9%          LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     55  100.0%            Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     40   42.1%          Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     40  100.0%            Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     84   46.7%        Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+     84  100.0%          Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     84  100.0%            Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+    135    5.4%      Function: ^cpus node:os:133:14
+    135  100.0%        Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+    135  100.0%          Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+    135  100.0%            Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+    114    4.6%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+     13   11.4%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     13  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      9   69.2%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      4   30.8%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      8    7.0%        Function: ^format /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/content-type/index.js:65:17
+      7   87.5%          Function: ^setCharset /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/utils.js:248:41
+      7  100.0%            Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1   12.5%          LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      7    6.1%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      7  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      7  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      6    5.3%        Function: ^asString /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/date-format/lib/index.js:29:18
+      6  100.0%          Function: ^timestampLevelAndCategory /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:42:35
+      3   50.0%            Function: ^colouredLayout /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:71:24
+      3   50.0%            Function: ^basicLayout /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:63:21
+      5    4.4%        LazyCompile: *asString /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/date-format/lib/index.js:29:18
+      5  100.0%          Function: ^timestampLevelAndCategory /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:42:35
+      3   60.0%            Function: ^basicLayout /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:63:21
+      2   40.0%            Function: ^colouredLayout /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/layouts.js:71:24
+      5    4.4%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      5  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      5  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      5    4.4%        Function: ^expressInit /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/middleware/init.js:29:30
+      3   60.0%          Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            Function: ^trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      2   40.0%          LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      4    3.5%        LazyCompile: *header /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:777:29
+      4  100.0%          Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      4  100.0%            LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      4    3.5%        Function: ^removeColors node:internal/util:76:22
+      4  100.0%          Function: ^isBelowBreakLength node:internal/util/inspect:1740:28
+      4  100.0%            Function: ^reduceToSingleString node:internal/util/inspect:1764:30
+      4    3.5%        Function: ^header /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:777:29
+      3   75.0%          Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      3  100.0%            Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      1   25.0%          Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      4    3.5%        Function: ^compileFunction node:vm:308:25
+      4  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      4  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      3    2.6%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2   66.7%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   33.3%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      3    2.6%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2    1.8%        LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      1   50.0%          LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            Function: ^router /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:46:18
+      1   50.0%          Function: ^myLogger /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:11:18
+      1  100.0%            LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      2    1.8%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   50.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1   50.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    1.8%        Function: ^parserOnIncoming node:_http_server:852:26
+      2  100.0%          Function: ^parserOnHeadersComplete node:_http_common:77:33
+      2    1.8%        Function: ^parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/content-type/index.js:106:16
+      1   50.0%          LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      1   50.0%          Function: ^setCharset /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/utils.js:248:41
+      1  100.0%            Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+     99    4.0%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     99  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:151:22
+     99  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+     99  100.0%            Function: ^Socket._write node:net:806:35
+     68    2.7%      Function: ^initialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/middleware/initialize.js:51:29
+     48   70.6%        LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+     48  100.0%          LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+     48  100.0%            Function: ^jsonParser /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/body-parser/lib/types/json.js:98:30
+     20   29.4%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     20  100.0%          Function: ^trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+     17   85.0%            LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      3   15.0%            Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:280:64
+     45    1.8%      Function: ^Hash node:internal/crypto/hash:58:14
+     45  100.0%        Function: ^createHash node:crypto:129:20
+     28   62.2%          Function: ^entitytag /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/etag/index.js:39:20
+     28  100.0%            Function: ^etag /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/etag/index.js:70:15
+     17   37.8%          Function: ^hash /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:596:14
+     11   64.7%            Function: ^generate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:363:22
+      6   35.3%            Function: ^isModified /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:425:24
+     37    1.5%      Function: ^randomFillSync node:internal/crypto/random:110:24
+     37  100.0%        Function: ^randomBytes node:internal/crypto/random:90:21
+     36   97.3%          Function: ^randomBytesSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/random-bytes/index.js:72:25
+     36  100.0%            Function: ^uidSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/uid-safe/index.js:75:18
+      1    2.7%          LazyCompile: ~randomBytesSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/random-bytes/index.js:72:25
+      1  100.0%            Function: ^uidSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/uid-safe/index.js:75:18
+     30    1.2%      LazyCompile: *nextTick node:internal/process/task_queues:104:18
+     17   56.7%        Function: ^onwrite node:internal/streams/writable:425:17
+     17  100.0%          Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      9   52.9%            Function: ^writevGeneric node:internal/stream_base_commons:126:23
+      8   47.1%            Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      3   10.0%        Function: ^resume node:internal/streams/readable:978:16
+      3  100.0%          Function: ^Readable.resume node:internal/streams/readable:964:37
+      3  100.0%            Function: ^_dump node:_http_incoming:364:49
+      3   10.0%        Function: ^resOnFinish node:_http_server:788:21
+      2   66.7%          Function: ^emit node:events:340:44
+      2  100.0%            Function: ^onFinish node:_http_outgoing:828:18
+      1   33.3%          LazyCompile: *emit node:events:340:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:828:18
+      3   10.0%        Function: ^emitReadable node:internal/streams/readable:563:22
+      3  100.0%          Function: ^onEofChunk node:internal/streams/readable:533:20
+      3  100.0%            Function: ^readableAddChunk node:internal/streams/readable:236:26
+      2    6.7%        Function: ^onDestroy node:internal/streams/destroy:73:21
+      1   50.0%          LazyCompile: ~Socket._destroy node:net:667:37
+      1  100.0%            Function: ^_destroy node:internal/streams/destroy:70:18
+      1   50.0%          Function: ^onError node:_http_incoming:374:17
+      1  100.0%            Function: ^_destroy node:_http_incoming:176:55
+      2    6.7%        Function: ^endReadable node:internal/streams/readable:1326:21
+      2  100.0%          Function: ^Readable.read node:internal/streams/readable:394:35
+      2  100.0%            Function: ^flow node:internal/streams/readable:1009:14
+     27    1.1%      Function: ^hash /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:596:14
+     17   63.0%        Function: ^isModified /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:425:24
+     10   58.8%          Function: ^shouldSetCookie /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:464:29
+     10  100.0%            Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:220:28
+      7   41.2%          Function: ^shouldSave /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:440:24
+      7  100.0%            Function: ^end /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:250:27
+     10   37.0%        Function: ^generate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:363:22
+     10  100.0%          Function: ^session /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:179:26
+      8   80.0%            LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      2   20.0%            Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     26    1.0%      LazyCompile: *realpathSync node:fs:2408:22
+     21   80.8%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+     21  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     21  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      5   19.2%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     26    1.0%      Function: ^session /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:179:26
+     19   73.1%        LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+     19  100.0%          LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+     19  100.0%            Function: ^expressInit /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/middleware/init.js:29:30
+      7   26.9%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      7  100.0%          Function: ^trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      7  100.0%            LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+     63    1.4%    LazyCompile: *compileFunction node:vm:308:25
+     34   54.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     34  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     34  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     34  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     29   46.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+     29  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     29  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     29  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+   1057   11.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+   1056   99.9%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+   1051   99.5%      Function: ^readSync node:fs:684:18
+    772   73.5%        Function: ^tryReadSync node:fs:429:21
+    770   99.7%          Function: ^readFileSync node:fs:450:22
+    739   96.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     26    3.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    279   26.5%        LazyCompile: *readFileSync node:fs:450:22
+    279  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    279  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+
+    985   10.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    985  100.0%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+    980   99.5%      Function: ^compileFunction node:vm:308:25
+    878   89.6%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    874   99.5%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+    859   98.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     15    1.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     98   10.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+     98  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     98  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+
+    480    5.0%  /usr/lib/system/libsystem_kernel.dylib
+    290   60.4%    LazyCompile: *cpus node:os:133:14
+    178   61.4%      Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+    104   58.4%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+    104  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+    104  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     74   41.6%        LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     74  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     74  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+    111   38.3%      Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+    111  100.0%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+    111  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+    111  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+    113   23.5%    LazyCompile: *readSync node:fs:684:18
+     96   85.0%      LazyCompile: *readFileSync node:fs:450:22
+     96  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     96  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     96  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     17   15.0%      Function: ^tryReadSync node:fs:429:21
+     17  100.0%        Function: ^readFileSync node:fs:450:22
+     17  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     17  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     37    7.7%    LazyCompile: *readFileSync node:fs:450:22
+     37  100.0%      Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     37  100.0%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     37  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     37  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+
+    320    3.3%  T __kernelrpc_mach_port_get_context
+
+    212    2.2%  T _host_request_notification
+    165   77.8%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      5    3.0%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1   20.0%        LazyCompile: ~MongoStore /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%          LazyCompile: ~create /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%            Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/app.js:1:1
+      1   20.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/node_modules/debug/src/node.js:124:55
+      1  100.0%          T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%            Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/node_modules/debug/src/node.js:1:1
+      1   20.0%        LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            Function: ^router /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:46:18
+      1   20.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/logger.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   20.0%        Function: ^isUint8Array node:internal/util/types:13:22
+      1  100.0%          Function: ^write_ node:_http_outgoing:730:16
+      1  100.0%            Function: ^end node:_http_outgoing:833:45
+      2    1.2%      LazyCompile: ~K /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/faker.js:1:1128
+      2  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/index.js:1:1
+      2  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     21    9.9%    LazyCompile: *compileFunction node:vm:308:25
+     11   52.4%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     11  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     11  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     11  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     10   47.6%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+     10  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     10  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     10  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+    211    2.2%  /usr/lib/system/libsystem_pthread.dylib
+    145   68.7%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      5    3.4%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1   20.0%        LazyCompile: ~updateRsFromPrimary /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:274:29
+      1  100.0%          LazyCompile: ~update /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:139:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1   20.0%        LazyCompile: ~setup /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:101:15
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/configuration.js:46:21
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1   20.0%        LazyCompile: ~parseCertString node:internal/tls/parse-cert-string:15:25
+      1  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      1  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+      1   20.0%        LazyCompile: ~checkServerIdentity node:tls:230:59
+      1  100.0%          LazyCompile: ~onConnectSecure node:_tls_wrap:1516:25
+      1  100.0%            Function: ^emit node:events:340:44
+      1   20.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/categories.js:74:27
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/configuration.js:46:21
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      3    2.1%      LazyCompile: ~getCheckedFunction node:os:63:28
+      3  100.0%        Function: ~<anonymous> node:os:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3    2.1%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      3  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      3  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/debug/src/node.js:1:1
+      3  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      2    1.4%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      2    1.4%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      2  100.0%        LazyCompile: ~immediate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      2  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/connection.js:571:34
+      2  100.0%            LazyCompile: ~promiseOrCallback /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      2    1.4%      LazyCompile: ~createAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:62:24
+      2  100.0%        LazyCompile: ~getAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:48:21
+      2  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:112:41
+      2  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      2    1.4%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      2  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+     55   26.1%    LazyCompile: *compileFunction node:vm:308:25
+     29   52.7%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+     29  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     29  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     29  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     26   47.3%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     26  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     26  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     26  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+
+    170    1.8%  UNKNOWN
+    124   72.9%    LazyCompile: *cpus node:os:133:14
+     77   62.1%      Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+     40   51.9%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     40  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     40  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     37   48.1%        LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     37  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     37  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     47   37.9%      Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+     47  100.0%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     47  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     47  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     36   21.2%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      3    8.3%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1   33.3%        LazyCompile: ~isIPv4 node:internal/net:31:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:995:26
+      1   33.3%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%            LazyCompile: ~pluralize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1   33.3%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1    2.8%      LazyCompile: ~validate_config /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%        LazyCompile: ~exports.find /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~realpathSync node:fs:2408:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      1    2.8%      LazyCompile: ~handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~process_params /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:338:47
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/tr/address/default_country.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/tr/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/tr/address/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/it/company/bs_verb.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/it/company/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/it/company/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/country_code.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/name/prefix.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/name/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/name/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ar/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ar/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: ~formatValue node:internal/util/inspect:726:21
+      1  100.0%        LazyCompile: ~inspect node:internal/util/inspect:286:17
+      1  100.0%          Function: ^formatWithOptionsInternal node:internal/util/inspect:1891:35
+      1  100.0%            Function: ^formatWithOptions node:internal/util/inspect:1883:27
+      1    2.8%      LazyCompile: ~depd /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/depd/index.js:103:15
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/body-parser/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: ~d /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/female_last_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/female_last_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:133:19
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~createAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    2.8%      LazyCompile: ~command /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/server.js:151:12
+      1  100.0%        LazyCompile: ~executeCommand /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/operations/command.js:48:19
+      1  100.0%          LazyCompile: ~execute /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/operations/indexes.js:75:12
+      1  100.0%            LazyCompile: ~execute /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/operations/indexes.js:127:12
+      1    2.8%      LazyCompile: ~checkServer /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/monitor.js:139:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/monitor.js:222:12
+      1  100.0%          LazyCompile: ~executeAndReschedule /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/utils.js:701:34
+      1  100.0%            LazyCompile: ~makeInterruptibleAsyncInterval /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/utils.js:646:40
+      1    2.8%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/address/state.js:1:202
+      1  100.0%        LazyCompile: ~m /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/address/state.js:1:375
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/address/state.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    2.8%      LazyCompile: ~D /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/company/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/company/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: ~<anonymous> node:path:1082:10
+      1  100.0%        LazyCompile: ~resolve node:path:1091:10
+      1  100.0%          LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.8%      LazyCompile: *resolve node:path:1091:10
+      1  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    2.8%      LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1  100.0%        Function: ^writeHead node:_http_server:269:19
+      1  100.0%          Function: ^writeHead /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^writeHead /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/on-headers/index.js:28:29
+      1    2.8%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/tr/lorem/words.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.8%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ne/internet/free_email.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.8%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.8%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/az/address/street_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.8%      Function: ^value node:internal/console/constructor:320:20
+      1  100.0%        Function: ^log node:internal/console/constructor:358:6
+      1  100.0%          T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%            Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+      1    2.8%      Function: ^stringify /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:1145:20
+      1  100.0%        Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      1  100.0%          Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+      1    2.8%      Function: ^set maxAge /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%        Function: ^resetMaxAge /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/session/session.js:58:68
+      1  100.0%          Function: ^touch /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/session/session.js:47:56
+      1  100.0%            Function: ^end /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:250:27
+      1    2.8%      Function: ^parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      1    2.8%      Function: ^inspect node:internal/util/inspect:286:17
+      1  100.0%        LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:1891:35
+      1  100.0%          Function: ^formatWithOptions node:internal/util/inspect:1883:27
+      1  100.0%            Function: ^value node:internal/console/constructor:320:20
+      1    2.8%      Function: ^getHeader node:_http_outgoing:590:57
+      1  100.0%        Function: ^res.get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:811:19
+      1  100.0%          Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/request.js:467:36
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    2.8%      Function: ^deserializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        Function: ^deserialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          Function: ^deserialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            LazyCompile: ~parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1    2.8%      Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      5    2.9%    LazyCompile: *compileFunction node:vm:308:25
+      3   60.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      3  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2   40.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+    153    1.6%  T _host_get_special_port
+     51   33.3%    LazyCompile: *compileFunction node:vm:308:25
+     51  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     51  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     51  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     51  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     19   12.4%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+     13   68.4%      LazyCompile: ~update /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:139:11
+     13  100.0%        Function: ^serverUpdateHandler /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:372:24
+     13  100.0%          Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:535:53
+     13  100.0%            Function: ^emit node:events:340:44
+      1    5.3%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/state.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/state.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    5.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ja/lorem/words.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    5.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/hu/word/noun.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    5.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_NG/name/last_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    5.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/system/mimeTypes.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    5.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/street.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+
+    147    1.5%  /usr/lib/system/libsystem_malloc.dylib
+     77   52.4%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      6    7.8%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      2   33.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      1   50.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^allocate node:buffer:397:18
+      1   50.0%          Function: ^alloc node:buffer:359:30
+      1  100.0%            Function: ^serialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/bson.js:111:19
+      1   16.7%        LazyCompile: ~updateRsNoPrimaryFromMember /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:332:37
+      1  100.0%          LazyCompile: ~update /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:139:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1   16.7%        LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1   16.7%        LazyCompile: ~MongoCredentials /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:31:16
+      1  100.0%          LazyCompile: ~merge /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:122:17
+      1  100.0%            LazyCompile: ~transform /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/connection_string.js:447:18
+      1   16.7%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      4    5.2%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      4  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      4    5.2%      Function: ^stringify /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:1145:20
+      4  100.0%        Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      4  100.0%          LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      4  100.0%            Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+      3    3.9%      LazyCompile: *realpathSync node:fs:2408:22
+      3  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      3  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      3    3.9%      Function: ^randomBytes node:internal/crypto/random:90:21
+      3  100.0%        Function: ^randomBytesSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/random-bytes/index.js:72:25
+      3  100.0%          Function: ^uidSync /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/uid-safe/index.js:75:18
+      3  100.0%            Function: ^generateSessionId /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:518:27
+      3    3.9%      Function: ^compression /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/compression/index.js:59:31
+      2   66.7%        LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      2  100.0%          LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      2  100.0%            Function: ^strategy.pass /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/middleware/authenticate.js:345:31
+      1   33.3%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      2    2.6%      Function: ^parse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/content-type/index.js:106:16
+      2  100.0%        LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      2  100.0%          Function: ^json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:250:25
+      2  100.0%            LazyCompile: *send /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/response.js:111:25
+      1    1.3%      LazyCompile: ~x /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es/address/default_country.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es/address/default_country.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~x /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~t /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/male_first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/male_first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~pathToFileURL node:internal/url:1455:23
+      1  100.0%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.3%      LazyCompile: ~parseConnectOptions /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:196:29
+      1  100.0%        Function: ^parseSslOptions /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:222:25
+      1  100.0%          LazyCompile: ~makeConnection /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:241:24
+      1  100.0%            LazyCompile: ~connect /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    1.3%      LazyCompile: ~p /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ro/date/month.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ro/date/month.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~m /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/cell_phone/index.js:1:246
+      1  100.0%        LazyCompile: ~i /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/cell_phone/index.js:1:419
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/cell_phone/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~m /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/name/male_first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/name/male_first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~i /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ne/address/city.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ne/address/city.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/name/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/date/weekday.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/date/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/date/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/street_name.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sv/phone_number/formats.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sv/phone_number/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sv/phone_number/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ge/company/prefix.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ge/company/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ge/company/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/address/street_suffix.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/address/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/company/bs_noun.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/company/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/company/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/name/name.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/name/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/name/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/company/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/company/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~f /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/animal/type.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/animal/type.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~emit node:events:340:44
+      1  100.0%        LazyCompile: ~connect /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:171:12
+      1  100.0%          LazyCompile: ~createTopology /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/operations/connect.js:44:24
+      1  100.0%            LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/operations/connect.js:32:67
+      1    1.3%      LazyCompile: ~d /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/internet/free_email.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/internet/free_email.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~createAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    1.3%      LazyCompile: ~connect node:_tls_wrap:1597:35
+      1  100.0%        LazyCompile: ~makeConnection /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:241:24
+      1  100.0%          Function: ^connect /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%            LazyCompile: ~measureRoundTripTime /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/monitor.js:280:30
+      1    1.3%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ja/address/city_prefix.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ja/address/city_prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/creature.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/creature.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~N /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zu_ZA/phone_number/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zu_ZA/phone_number/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~Long.negate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/long.js:613:38
+      1  100.0%        Function: ^Long.neg /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/long.js:619:35
+      1  100.0%          LazyCompile: ~Long.subtract /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/long.js:720:40
+      1  100.0%            LazyCompile: ~Long.sub /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/long.js:726:35
+      1    1.3%      LazyCompile: ~I /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/company/suffix.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/company/suffix.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~C /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/street_suffix.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/street_suffix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/monitor.js:173:73
+      1  100.0%        Function: ^onMessage /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%          Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.3%      LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection_pool.js:267:27
+      1  100.0%        LazyCompile: ~handleOperationResult /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/server.js:325:42
+      1  100.0%          LazyCompile: ~onMessage /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%            Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1    1.3%      LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/url-state-machine.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zu_ZA/address/postcode.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/address/street_address.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ru/internet/domain_suffix.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/internet/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/first_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/city_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/he/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/country_code.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es/name/suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_NG/address/default_country.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/name/title.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ^initialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/middleware/initialize.js:51:29
+      1  100.0%        LazyCompile: *trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: *next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^jsonParser /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/body-parser/lib/types/json.js:98:30
+      1    1.3%      Function: ^hash /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:596:14
+      1  100.0%        Function: ^isModified /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:425:24
+      1  100.0%          Function: ^shouldSetCookie /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:464:29
+      1  100.0%            Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:220:28
+     30   20.4%    LazyCompile: *cpus node:os:133:14
+     17   56.7%      Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+      9   52.9%        LazyCompile: *handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      9  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+      9  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+      8   47.1%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      8  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+      8  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     13   43.3%      Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+     13  100.0%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+     13  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+     13  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+     11    7.5%    LazyCompile: *compileFunction node:vm:308:25
+      6   54.5%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      6  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      6  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      6  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5   45.5%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      5  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      5  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      5  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+    109    1.1%  /usr/lib/system/libsystem_c.dylib
+     81   74.3%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    1.2%      T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%        LazyCompile: ~module.exports.get_best_napi_build_version /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:187:54
+      1  100.0%          LazyCompile: ~module.exports.validate_package_json /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:46:48
+      1  100.0%            LazyCompile: ~validate_config /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1    1.2%      LazyCompile: ~update /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology_description.js:139:11
+      1  100.0%        LazyCompile: ~serverUpdateHandler /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/topology.js:535:53
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.2%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    1.2%      LazyCompile: ~t /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/az/company/name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/az/company/name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:141:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.2%      LazyCompile: ~set /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/application.js:359:23
+      1  100.0%        LazyCompile: ~defaultConfiguration /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/application.js:77:57
+      1  100.0%          LazyCompile: ~init /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/application.js:64:25
+      1  100.0%            LazyCompile: ~createApplication /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/express.js:37:27
+      1    1.2%      LazyCompile: ~serializeInto /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%        LazyCompile: ~serializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/serializer.js:258:25
+      1  100.0%          LazyCompile: ~serializeInto /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%            LazyCompile: ~serializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/serializer.js:258:25
+      1    1.2%      LazyCompile: ~s /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/name/male_title.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/name/male_title.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~realpathSync node:fs:2408:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:11:25
+      1    1.2%      LazyCompile: ~r /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/name/tussenvoegsel.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/name/tussenvoegsel.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~pushAsyncContext node:internal/async_hooks:529:26
+      1  100.0%        LazyCompile: ~emitBeforeScript node:internal/async_hooks:499:26
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.2%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.2%      LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.2%      LazyCompile: ~p /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/it/name/name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/it/name/name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~onParserExecute node:_http_server:633:25
+      1    1.2%      LazyCompile: ~o /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/company/prefix.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/company/prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~module.exports.basicURLParse /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/url-state-machine.js:1206:41
+      1  100.0%        LazyCompile: ~URLImpl /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/URL-impl.js:7:14
+      1  100.0%          LazyCompile: ~exports.setup /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/URL.js:49:17
+      1  100.0%            LazyCompile: ~URL /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/whatwg-url/lib/URL.js:90:16
+      1    1.2%      LazyCompile: ~l /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sv/team/name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sv/team/name.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~l /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/company/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/company/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~hasObserver node:internal/perf/observe:474:21
+      1  100.0%        LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.2%      LazyCompile: ~h /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/address/city_prefix.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/address/city_prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/name/last_name.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/name/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ur/name/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/building_number.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/hy/date/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/hy/date/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/state_abbr.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/team/name.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/team/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/team/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/currency.js:1:311
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/lorem/index.js:1:355
+      1  100.0%        LazyCompile: ~get /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~generate /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:363:22
+      1  100.0%        LazyCompile: ~session /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: ~handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/index.js:293:23
+      1    1.2%      LazyCompile: ~f /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/company/bs_adjective.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/company/bs_adjective.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~f /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/index.js:1:246
+      1  100.0%        LazyCompile: ~e /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/index.js:1:419
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~d /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ko/internet/free_email.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ko/internet/free_email.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~createHttpErrorConstructor /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/http-errors/index.js:112:37
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/http-errors/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~createClientErrorConstructor /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/http-errors/index.js:127:39
+      1  100.0%        LazyCompile: ~forEachCode /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/http-errors/index.js:259:38
+      1  100.0%          T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%            LazyCompile: ~populateConstructorExports /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/http-errors/index.js:258:37
+      1    1.2%      LazyCompile: ~createAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    1.2%      LazyCompile: ~continueScramConversation /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%          LazyCompile: ~onMessage /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%            LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1    1.2%      LazyCompile: ~c /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr/address/city_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr/address/city_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/vi/phone_number/formats.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/vi/phone_number/formats.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/phone_number/formats.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/phone_number/formats.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ge/name/first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/ge/name/first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/phone_number/formats.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en/phone_number/formats.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~b /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/postcode.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/postcode.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~_ /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_US/address/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_US/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~ObjectId /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/objectid.js:24:22
+      1  100.0%        Function: ^deserializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserializeObject /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserialize /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    1.2%      LazyCompile: ~N /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/phone_number/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/nl/phone_number/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~Msg /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/commands.js:468:16
+      1  100.0%        LazyCompile: ~command /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:247:12
+      1  100.0%          LazyCompile: ~executeScram /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/scram.js:74:22
+      1  100.0%            LazyCompile: ~auth /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/auth/scram.js:39:9
+      1    1.2%      LazyCompile: ~K /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/vi/name/male_first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/vi/name/male_first_name.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~K /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/faker.js:1:1128
+      1  100.0%        Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%      LazyCompile: ~Connection /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:40:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%          LazyCompile: ~callback /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:254:31
+      1  100.0%            LazyCompile: ~connectHandler /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connect.js:298:28
+      1    1.2%      LazyCompile: ~Authenticator.init /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/authenticator.js:29:40
+      1  100.0%        LazyCompile: ~Authenticator /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/authenticator.js:13:23
+      1  100.0%          Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/passport/lib/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%      LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/index.js:341:49
+      1  100.0%        LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:22
+      1  100.0%          T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1  100.0%            LazyCompile: ~promiseOrCallback /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1    1.2%      LazyCompile: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/sdam/monitor.js:173:73
+      1  100.0%        Function: ^onMessage /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%          Function: ^<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.2%      LazyCompile: *unsigned32 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/utils/mersenne.js:1:669
+      1  100.0%        Function: ^multiplication32 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/utils/mersenne.js:1:872
+      1  100.0%          Function: ^initGenrand /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/utils/mersenne.js:1:981
+      1  100.0%            LazyCompile: ~a /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/mersenne.js:1:699
+      1    1.2%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/gauge/themes.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/address/state.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/sk/company/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/country.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/phone_number/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/lv/cell_phone/formats.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/fa/name/name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/lorem/words.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/name/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/internet/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/el/commerce/department.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/name/last_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/de/address/default_country.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/locales/cz/lorem/words.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/image_providers/unsplash.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/definitions/music.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ~<anonymous> /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/@faker-js/faker/dist/cjs/datatype.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.2%      Function: ^onconnection node:net:1548:22
+      1    1.2%      Function: ^handleErrorFromBinding node:internal/fs/utils:340:32
+      1  100.0%        Function: ^readSync node:fs:684:18
+      1  100.0%          LazyCompile: ~tryReadSync node:fs:429:21
+      1  100.0%            LazyCompile: ~readFileSync node:fs:450:22
+     20   18.3%    LazyCompile: *compileFunction node:vm:308:25
+     15   75.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     15  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+     15  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     15  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5   25.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1055:37
+      5  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      5  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      5  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      4    3.7%    LazyCompile: *cpus node:os:133:14
+      3   75.0%      Function: ^info2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:55:10
+      3  100.0%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+      3  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+      1   25.0%      Function: ^info /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/controllers/viewsController.js:42:9
+      1  100.0%        Function: ^handle /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^myLogger2 /Users/juanma/Desktop/DesafiosBack/desafios/desafio32/build/src/middlewares/logger.js:16:19
+
+    101    1.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    101  100.0%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+     94   93.1%      Function: ^read node:internal/modules/package_json_reader:16:14
+     75   79.8%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     68   90.7%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     68  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      5    6.7%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      5  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.3%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.3%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     19   20.2%        LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      9   47.4%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      9  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      6   31.6%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      3   50.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3   50.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      4   21.1%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      4  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      7    6.9%      LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      4   57.1%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      4  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      4  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      3   42.9%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      2   66.7%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   33.3%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+
+    100    1.0%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    100  100.0%    T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+     78   78.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     59   75.6%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     10   16.9%          Function: ~<anonymous> node:crypto:1:1
+     10  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   11.9%          Function: ~<anonymous> node:http:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6   10.2%          Function: ~<anonymous> node:tls:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    8.5%          Function: ~<anonymous> node:tty:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    6.8%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.1%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.1%          Function: ~<anonymous> node:child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.4%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    3.4%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.4%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.4%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          LazyCompile: ~lazyLoadStreams node:fs:2841:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2984:17
+      1    1.7%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    1.7%          LazyCompile: ~get BlockList node:net:1779:16
+      1  100.0%            T node::PerProcessOptions::CheckOptions(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*)
+      1    1.7%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.7%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     16   20.5%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     15   93.8%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     15  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    6.3%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3    3.8%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2   66.7%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1   50.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   33.3%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+     22   22.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     22  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      5   22.7%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:421:29
+      5  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      4   18.2%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3   13.6%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    9.1%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    9.1%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    4.5%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:460:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    4.5%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    4.5%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    4.5%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    4.5%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.5%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+

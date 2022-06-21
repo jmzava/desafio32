@@ -16,26 +16,42 @@ http://localhost:8080/
 
 para ejecutar con un puerto desde la linea de comando 
 
-node build/server.js --port 8080 --mode FORK/CLUSTER
+pruebas artillery 
 
-con FOREVER
+Ejecutar node —prof build/server.js
 
-forever start  build/server.js --port 8080 --mode FORK/CLUSTER
-forever list
-forever stop <PID>
-forever stopall
-
-con PM2 en modo FORK
-
-pm2 start build/server.js --name="serverAPP" -- --port PORT --mode FORK/CLUSTER
-
-con PM2 en modo CLUSTER
-
-pm2 start build/server.js --name="serverAPP" --watch -i max -- --port PORT --mode FORK/CLUSTER
+luego
 
 
+Artillery quick --count 50 -n 20 http://localhost:8080/info2 > reports/artillery/artillery_with_console.log  
 
-para el /api/randoms tiene un numero definido, si se pasa la url como api/randoms?cant=XXX ejecuta el numero solicitado
 
+Artillery quick --count 50 -n 20 http://localhost:8080/info > reports/artillery/artillery_without_console.log  
+
+se realiza el prof-proceess sobre el isolated file 
+
+cuando l oejecuten sobre el log de artillery dio esto
+
+(node:93775) ExperimentalWarning: VM Modules is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+autocannon
+
+sin consola
+
+autocannon -c 100 -d 20 http://localhost:8080/info  
+
+con consola
+
+autocannon -c 100 -d 20 http://localhost:8080/info2  
+
+se ejecuta el serveer 0x build/server.js
+
+se corre la csarga con autocannon nuevamente 
+
+se movio la carpeta generada luego de detener el servidor al reporte 0x
+
+en todos los casos s nota claramente que el mostrar datos por consola afecta la performance de la app considerablemente
 
 

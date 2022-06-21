@@ -9,6 +9,9 @@ const app_1 = __importDefault(require("./src/app"));
 const minimist_1 = __importDefault(require("minimist"));
 const cluster_1 = __importDefault(require("cluster"));
 const os_1 = __importDefault(require("os"));
+require("./src/models/logs4js");
+const logs4js_1 = __importDefault(require("./src/models/logs4js"));
+const logError = logs4js_1.default.getLogger("fileError");
 const args = (0, minimist_1.default)(process.argv.slice(2));
 //
 const numCPU = os_1.default.cpus().length;
@@ -30,11 +33,11 @@ if (serverMode == "CLUSTER") {
     else {
         app_1.default
             .listen(PORT, () => console.log(`http://localhost:${PORT} mode ${serverMode}`))
-            .on('error', err => console.log(err));
+            .on('error', err => logError.error("Error al levantar el servidor " + err));
     }
 }
 else {
     app_1.default
         .listen(PORT, () => console.log(`http://localhost:${PORT} mode ${serverMode}`))
-        .on('error', err => console.log(err));
+        .on('error', err => logError.error("Error al levantar el servidor " + err));
 }

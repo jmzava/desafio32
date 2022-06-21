@@ -40,7 +40,7 @@ class ViewsController {
         });
     }
     info(req, res) {
-        res.send({
+        let infoCPU = {
             args: process.argv.slice(2).join(" - "),
             OSName: process.platform,
             nodeVersion: process.version,
@@ -49,7 +49,22 @@ class ViewsController {
             PID: process.pid,
             folder: process.cwd(),
             CPUs: os_1.default.cpus().length,
-        });
+        };
+        res.send(infoCPU);
+    }
+    info2(req, res) {
+        let infoCPU = {
+            args: process.argv.slice(2).join(" - "),
+            OSName: process.platform,
+            nodeVersion: process.version,
+            usageOfMemory: process.memoryUsage(),
+            execPath: process.execPath,
+            PID: process.pid,
+            folder: process.cwd(),
+            CPUs: os_1.default.cpus().length,
+        };
+        console.log(infoCPU);
+        res.send(infoCPU);
     }
 }
 ViewsController.listProd = [];

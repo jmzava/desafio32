@@ -15,4 +15,5 @@ routes.get('/signUpOk', viewsController_1.default.signupOk);
 routes.get('/logout', viewsController_1.default.logout);
 routes.get('/products', authCheck_1.isAuth, viewsController_1.default.productsView);
 routes.get('/info', logger_1.myLogger2, viewsController_1.default.info);
+routes.get('/info2', logger_1.myLogger2, viewsController_1.default.info2);
 exports.default = routes;

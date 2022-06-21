@@ -14,6 +14,7 @@ routes.get('/logout', viewsController.logout)
 routes.get('/products', isAuth, viewsController.productsView )
 
 routes.get('/info', myLogger2, viewsController.info)
+routes.get('/info2', myLogger2, viewsController.info2)
 
 
 export default routes

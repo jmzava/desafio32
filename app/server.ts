@@ -6,6 +6,11 @@ import minimist from "minimist";
 import cluster from 'cluster'
 import os from 'os'
 
+import './src/models/logs4js'
+import log4js from './src/models/logs4js';
+
+const logError = log4js.getLogger("fileError")
+
 const args = minimist(process.argv.slice(2));
 //
 
@@ -42,12 +47,13 @@ if(serverMode=="CLUSTER"){
     } else {
         app
             .listen(PORT, () => console.log(`http://localhost:${PORT} mode ${serverMode}`))
-            .on('error', err => console.log(err))
-    }
+            .on('error', err => logError.error("Error al levantar el servidor " + err))
+        }
 }else{
     app
     .listen(PORT, () => console.log(`http://localhost:${PORT} mode ${serverMode}`))
-    .on('error', err => console.log(err))
+    .on('error', err => logError.error("Error al levantar el servidor " + err))
+
 }
 
 
